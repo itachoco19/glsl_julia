@@ -25,5 +25,5 @@ void main(void)
 {
     vec2 uv = (gl_FragCoord.xy * 2.0 - resolution.xy) / min(resolution.x, resolution.y);
     vec3 color_vec = vec3(sin(time * 0.5) * 0.25 + 0.5, sin(time * 0.5 + 3.1415) * 0.25 + 0.5, sin(time * 0.7) * 0.25 + 0.5);
-    gl_FragColor = vec4(color_vec * culc_julia(uv * 1.0, vec2(cos(time * 0.5), sin(time * 0.5))), 1.0);
+    gl_FragColor = vec4(color_vec * culc_julia(uv / 1.0 + vec2(0.0, 0.0), vec2(cos(time * 0.5), sin(time * 0.5))), 1.0);
 }
