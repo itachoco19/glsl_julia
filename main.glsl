@@ -7,7 +7,7 @@ precision mediump float;
 uniform float time;
 uniform vec2 resolution;
 
-float culc_julia(vec2 pos, vec2 c)
+float calc_julia(vec2 pos, vec2 c)
 {
     int result = 0;
     vec2 an = pos;
